@@ -19,6 +19,13 @@ public class studenteimplementation implements operations1  {
 	@Override
 	public void deleteStudent(int id, ArrayList<studente> studlist) {
 		// TODO Auto-generated method stub
+		studente s=findStudent(id,studlist);
+		if(s!=null)
+			{
+				studlist.remove(s);
+			}
+		System.out.println("Deleted successfully");
+
 		
 	}
 
