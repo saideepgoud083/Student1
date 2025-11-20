@@ -25,7 +25,11 @@ public class studenteimplementation implements operations1  {
 	@Override
 	public void displayStudent(ArrayList<studente> studlist) {
 		// TODO Auto-generated method stub
-		
+		if(studlist!=null) {
+			for(studente s:studlist) {
+				System.out.println(s);
+			}
+		}
 	}
 
 	@Override
